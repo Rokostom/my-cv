@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {HashRouter as Router, Routes, Route} from "react-router-dom";
 
 import ".//styles/main.css";
 
@@ -9,7 +9,6 @@ import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import Project from "./pages/Project";
 import ScrollToTop from "./utils/scrollToTop";
-
 
 function App() {
   return (
