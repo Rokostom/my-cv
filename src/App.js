@@ -1,4 +1,4 @@
-import {HashRouter as Router, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 
 import ".//styles/main.css";
 
@@ -13,7 +13,7 @@ import ScrollToTop from "./utils/scrollToTop";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter basename="/">
         <ScrollToTop />
         <Navbar />
           <Routes>
@@ -23,7 +23,7 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 }
